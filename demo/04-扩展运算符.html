@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 扩展运算符： ...
+      // 作用：解开一个数组或者是一个对象
+
+      // var arr = [12, 3, 4, 5]
+      // var newArr = [5, 6, 7]
+      // var arr1 = [...arr, 1, ...newArr]
+      // console.log(arr1)
+      // var arr = [12, 3, 4, 5]
+      // var max = Math.max(...arr)
+      // console.log(max)
+
+      //面试题： 使用一句话完成数据去重
+      // var arr = [12, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 78, 8, 9]
+      // var newArr = [...new Set(arr)]
+      // console.log(newArr)
+
+      // 扩展一个对象
+      var obj = {
+        name: 'zs',
+        age: 18,
+        gender: '男'
+      }
+
+      var newObj = {
+        ...obj,
+        name: 'ls'
+      }
+
+      console.log(newObj)
+    </script>
+  </body>
+</html>
